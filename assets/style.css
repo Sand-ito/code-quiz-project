@@ -1,0 +1,28 @@
+body {
+    background-color: darkkhaki;
+}
+
+header {
+    border: solid cyan;
+}
+
+h1 {
+    display: inline-block;
+}
+
+#time-box {
+    float: right;
+}
+
+main {
+    border: solid powderblue;
+    text-align: center;
+    margin: 150px auto;
+    width: 50%;
+    font-size: 200%;
+}
+
+button {
+    padding: 24px;
+    font-size: 24px;
+}
