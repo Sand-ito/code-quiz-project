@@ -3,6 +3,10 @@
     font-family: cursive;
 }
 
+.hidden {
+    display: none;
+}
+
 body {
     background-color: #EAE0C8;
 }
@@ -33,10 +37,6 @@ main {
 .start-button {
     padding: 24px;
     font-size: 24px;
-}
-
-.start-button-hidden {
-    display: none;
 }
 
 .answers {
