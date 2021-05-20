@@ -40,7 +40,7 @@ main {
 }
 
 .answers {
-    
+    display: inline-block;
 }
 
 .answers-hidden{
