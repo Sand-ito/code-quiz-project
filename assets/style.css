@@ -1,28 +1,48 @@
-body {
-    background-color: darkkhaki;
+* {
+    color: #018382;
+    font-family: cursive;
 }
 
-header {
-    border: solid cyan;
+body {
+    background-color: #EAE0C8;
 }
 
 h1 {
     display: inline-block;
 }
 
-#time-box {
+.timer-card {
     float: right;
+    
+}
+
+.timer-count { 
+    font-size: 64px;
+    /* display: inline-block; */
+    text-align: center;
+    margin: 0 auto;
 }
 
 main {
-    border: solid powderblue;
     text-align: center;
     margin: 150px auto;
     width: 50%;
     font-size: 200%;
 }
 
-button {
+.start-button {
     padding: 24px;
     font-size: 24px;
+}
+
+.start-button-hidden {
+    display: none;
+}
+
+.answers {
+    
+}
+
+.answers-hidden{
+    display: none;
 }
