@@ -3,10 +3,6 @@
     font-family: cursive;
 }
 
-.hidden {
-    display: none;
-}
-
 body {
     background-color: #EAE0C8;
 }
@@ -22,7 +18,6 @@ h1 {
 
 .timer-count { 
     font-size: 64px;
-    /* display: inline-block; */
     text-align: center;
     margin: 0 auto;
 }
@@ -43,6 +38,17 @@ main {
     display: inline-block;
 }
 
-.answers-hidden{
+.is-correct-hidden,
+.answers-hidden,
+.hidden {
     display: none;
+}
+
+.is-correct-container {
+    display: contents;
+}
+
+.is-correct-text {
+    font-style: italic;
+    opacity: 0.5;
 }
