@@ -57,6 +57,20 @@ main {
     opacity: 0.5;
 }
 
+.score-input-hidden {
+    display: none;
+}
+
+input{
+    display: block;
+    margin: 24px auto;
+}
+
+.submit-butt {
+    font-size: 24px;
+    display: inline;
+}
+
 /* CSS for scores.html */
 .reset-scores{
     float: right;

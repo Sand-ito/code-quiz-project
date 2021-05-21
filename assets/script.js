@@ -1,6 +1,7 @@
-// start Button and timer
+// start Button, timer, input form for scores, aswell as a try again button
 var startButton = document.querySelector(".start-button");
 var timerEl = document.querySelector(".timer-count");
+var inputContainer = document.querySelector('.score-input-hidden')
 // Text elements for question
 var quizTitle = document.querySelector(".title");
 var questionEl = document.querySelector(".question");
@@ -33,6 +34,7 @@ function incorrect() {
 function startQuiz() {
     startButton.setAttribute('class', 'hidden');
     quizTitle.setAttribute('class', 'hidden');
+    inputContainer.setAttribute('class', 'score-input-hidden')
     answersHidden.setAttribute('class', 'answers');
     correctContainer.setAttribute('class', 'is-correct-container');
 
@@ -242,7 +244,9 @@ function questionSix() {
 
 //Quiz ends to show input for high scores
 function endQuiz() {
+    inputContainer.setAttribute('class', 'score-input')
     clearInterval(timer);
+
 }
 
 function startTimer() {
