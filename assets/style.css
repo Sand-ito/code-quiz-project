@@ -48,6 +48,10 @@ main {
     display: none;
 }
 
+#hidden {
+    display: none;
+}
+
 .is-correct-container {
     display: contents;
 }
