@@ -11,3 +11,5 @@ While making this quiz there were many challenges faced. The primary thorn in my
 Thank you for taking your time to look at my code and take my quiz. Have a nice day!
 
 -Josh
+
+After writing this and before submitting I decided to not use my highscores as they break the code in browers. Sorry for the let down.
