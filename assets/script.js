@@ -1,7 +1,10 @@
-// start Button, timer, input form for scores, aswell as a try again button
+// start Button, and timer
 var startButton = document.querySelector(".start-button");
 var timerEl = document.querySelector(".timer-count");
+// Input variables for score
 var inputContainer = document.querySelector('.score-input-hidden')
+var submitButt = document.querySelector('.submit-butt')
+var userInput = document.querySelector('#user-input')
 // Text elements for question
 var quizTitle = document.querySelector(".title");
 var questionEl = document.querySelector(".question");
@@ -19,6 +22,29 @@ var timer;
 var timerCount;
 
 var score = timerCount;
+
+var highscores = JSON.parse(localStorage.getItem('highscores')) || []
+
+function saveLastScore() {
+    var highscore = {
+        name: userInput.value,
+        score: timerCount
+    };
+
+    var newScores = highscores.concat(highscore);
+
+    localStorage.setItem("highscores", JSON.stringify(newScores))
+}
+
+function renderScores() {
+    highscores = JSON.parse(localStorage.getItem('highscores'));
+}
+
+submitButt.addEventListener('click', function (event) {
+    event.preventDefault();
+    saveLastScore();
+    renderScores();
+});
 
 //functions to notify user if they were correct and incorrect
 function correct() {
@@ -246,8 +272,8 @@ function questionSix() {
 function endQuiz() {
     inputContainer.setAttribute('class', 'score-input')
     clearInterval(timer);
-
 }
+
 
 function startTimer() {
     timer = setInterval(function () {
