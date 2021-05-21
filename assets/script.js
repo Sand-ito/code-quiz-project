@@ -294,6 +294,7 @@ function startTimer() {
         timerCount--;
         timerEl.textContent = timerCount;
         if (timerCount <= 0) {
+            endQuiz();
             clearInterval(timer);
         }
     }, 1000);
