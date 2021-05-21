@@ -247,40 +247,40 @@ function questionSix() {
 }
 
 // Functions for score
-submitButt.addEventListener('click', function (event) {
-    event.preventDefault();
-    saveLastScore();
-    renderScores();
-});
-var score = timerCount;
+// submitButt.addEventListener('click', function (event) {
+//     event.preventDefault();
+//     saveLastScore();
+//     renderScores();
+// });
+// var score = timerCount;
 
-var highscores = JSON.parse(localStorage.getItem('highscores')) || []
+// var highscores = JSON.parse(localStorage.getItem('highscores')) || []
 
-function saveLastScore() {
-    var highscore = {
-        name: userInput.value,
-        score: timerCount
-    };
+// function saveLastScore() {
+//     var highscore = {
+//         name: userInput.value,
+//         score: timerCount
+//     };
 
-    var newScores = highscores.concat(highscore);
+//     var newScores = highscores.concat(highscore);
 
-    localStorage.setItem("highscores", JSON.stringify(newScores))
-}
+//     localStorage.setItem("highscores", JSON.stringify(newScores))
+// }
 
-function renderScores() {
-    highscores = JSON.parse(localStorage.getItem('highscores'));
-    for (var highscore of highscores) {
-        var leaderboardEl = document.querySelector('.leaderboard');
-        var paraEl = document.createElement("p");
-        paraEl.textContent = highscore.name + ': ' + highscore.score;
-        leaderboardEl.append(paraEl);
-    }
-}
+// function renderScores() {
+//     highscores = JSON.parse(localStorage.getItem('highscores'));
+//     for (var highscore of highscores) {
+//         var leaderboardEl = document.querySelector('.leaderboard');
+//         var paraEl = document.createElement("p");
+//         paraEl.textContent = highscore.name + ': ' + highscore.score;
+//         leaderboardEl.append(paraEl);
+//     }
+// }
 
-function init() {
-    renderScores();
-}
-init();
+// function init() {
+//     renderScores();
+// }
+// init();
 
 //Quiz ends to show input for high scores
 function endQuiz() {
@@ -301,5 +301,3 @@ function startTimer() {
 }
 
 startButton.addEventListener("click", startQuiz);
-
-console.log('test');
