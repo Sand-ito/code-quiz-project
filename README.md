@@ -12,4 +12,4 @@ Thank you for taking your time to look at my code and take my quiz. Have a nice 
 
 -Josh
 
-After writing this and before submitting I decided to not use my highscores as they break the code in browers. Sorry for the let down.
+After writing this and before submitting I decided to not use my highscores as they break the code in browser. Sorry for the let down.
